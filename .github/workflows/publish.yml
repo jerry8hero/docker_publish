@@ -3,7 +3,8 @@ name: Publish Docker image test
 on:
   release:
     types: [published]
-
+  schedule:
+     - cron:  '10 15 * * *'
   workflow_dispatch:
   
 jobs:
@@ -24,7 +25,8 @@ jobs:
         id: meta
         uses: docker/metadata-action@98669ae865ea3cffbcbaa878cf57c20bbf1c6c38
         with:
-          images: jerry8hero/x-test:ubuntu
+          images: jerry8hero/x-test
+          #TODO:如何给image 打 tags 和 labels
           #images: my-docker-hub-namespace/my-docker-hub-repository
 
       - name: Build and push Docker image
