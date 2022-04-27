@@ -25,7 +25,7 @@ jobs:
         id: meta
         uses: docker/metadata-action@98669ae865ea3cffbcbaa878cf57c20bbf1c6c38
         with:
-          images: jerry8hero/x-test:ubunu
+          images: jerry8hero/x-test
           #TODO:如何给image 打 tags 和 labels
           #images: my-docker-hub-namespace/my-docker-hub-repository
 
@@ -34,5 +34,5 @@ jobs:
         with:
           context: .
           push: true
-          tags: ubuntu
-          labels: 0.3
+          tags: jerry8hero/x-test:ubunu
+          labels: 0.5
