@@ -3,9 +3,9 @@ name: Publish Docker image test
 on:
   release:
     types: [published]
-  schedule:
-     - cron:  '30 16 * * *'
-  #workflow_dispatch:
+  #schedule:
+     #- cron:  '30 16 * * *'
+  workflow_dispatch:
   
 jobs:
   push_to_registry:
