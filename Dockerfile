@@ -1,5 +1,5 @@
-FROM centos:latest
+FROM debian:latest
 
-RUN yum update 
+RUN apt update 
 
 CMD echo "今天是2022年5月14日"
