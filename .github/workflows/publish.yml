@@ -32,5 +32,5 @@ jobs:
         with:
           context: .
           push: true
-          tags: jerry8hero/x-test:ubunu
-          labels: 0.5
+          tags: jerry8hero/x-test:debian
+          labels: 1.0
