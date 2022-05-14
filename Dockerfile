@@ -1,5 +1,5 @@
-FROM ubuntu:18.04
+FROM centos:latest
 
 RUN apt update 
 
-CMD echo "今天是2022年4月27日"
+CMD echo "今天是2022年5月14日"
